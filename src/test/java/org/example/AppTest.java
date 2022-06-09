@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class AppTest {
     @Test
-    public void primerMetodo() {
+    public void primerMetodo() throws Exception {
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://oktana-1fb-dev-ed.my.salesforce.com/");
@@ -18,7 +18,9 @@ public class AppTest {
         WebElement botonAzul = driver.findElement(By.xpath("//input[@id='Login']"));
 
         usernameField.sendKeys("developers.lwc@oktana.com");
-        passwordField.sendKeys("dev.lwc2024");
+        passwordField.sendKeys("dev.lwc2023");
+
+        Thread.sleep(8000);
 
         botonAzul.click();
     }
