@@ -23,5 +23,7 @@ public class AppTest {
         Thread.sleep(8000);
 
         botonAzul.click();
+
+        driver.quit();
     }
 }
