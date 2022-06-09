@@ -11,7 +11,7 @@ public class AppTest {
     public void primerMetodo() {
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://login.salesforce.com/");
+        driver.get("https://oktana-1fb-dev-ed.my.salesforce.com/");
 
         WebElement usernameField = driver.findElement(By.xpath("//input[@id='username']"));
         WebElement passwordField = driver.findElement(By.xpath("//input[@id='password']"));
